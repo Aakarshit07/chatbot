@@ -1,0 +1,125 @@
+/* Global styles (e.g., in index.css or App.css) */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 500px;
+  height: 80vh;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #cfcdcd;
+  border-radius: 10px;
+  background-color: violet;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Messages Area */
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  overflow-y: auto;
+  padding-right: 10px;
+  height: 70vh; /* Adjust height to allow scrolling */
+}
+
+/* Message Styles */
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 5px 0;
+  word-wrap: break-word;
+}
+
+/* User Message */
+.user-message {
+  background-color: #f7deb5;
+  align-self: flex-end;
+  border-radius: 15px 15px 0 15px;
+  color: #00796b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Bot Response */
+.bot-response {
+  background-color: #ffb5b5;
+  align-self: flex-start;
+  border-radius: 15px 15px 15px 0;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-container input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  background-color: #01413d;
+  color: #000000;
+}
+
+.input-container input:focus {
+  border-color: #00796b;
+}
+
+.input-container button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #004d40;
+}
+
+/* Scrollbar Styles for Messages */
+.messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #00796b;
+  border-radius: 10px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background-color: #f4f4f9;
+}
